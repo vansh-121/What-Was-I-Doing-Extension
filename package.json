@@ -1,0 +1,138 @@
+{
+  "name": "what-was-i-doing",
+  "displayName": "What Was I Doing",
+  "description": "Automatically tracks your work context and helps you resume exactly where you left off after breaks",
+  "version": "0.0.1",
+  "publisher": "your-publisher-name",
+  "author": {
+    "name": "Your Name"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/what-was-i-doing"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/what-was-i-doing/issues"
+  },
+  "keywords": [
+    "productivity",
+    "context",
+    "resume",
+    "workflow",
+    "focus",
+    "tracking"
+  ],
+  "engines": {
+    "vscode": "^1.106.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "whatWasIDoing.showLastContext",
+        "title": "What Was I Doing: Show Last Context",
+        "icon": "$(clock)"
+      },
+      {
+        "command": "whatWasIDoing.showHistory",
+        "title": "What Was I Doing: View History",
+        "icon": "$(history)"
+      },
+      {
+        "command": "whatWasIDoing.clearHistory",
+        "title": "What Was I Doing: Clear History",
+        "icon": "$(trash)"
+      },
+      {
+        "command": "whatWasIDoing.saveCurrentContext",
+        "title": "What Was I Doing: Save Current Context",
+        "icon": "$(save)"
+      }
+    ],
+    "configuration": {
+      "title": "What Was I Doing",
+      "properties": {
+        "whatWasIDoing.idleTimeoutMinutes": {
+          "type": "number",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 120,
+          "description": "Number of minutes of inactivity before saving work context"
+        },
+        "whatWasIDoing.maxHistorySize": {
+          "type": "number",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 50,
+          "description": "Maximum number of work sessions to keep in history"
+        },
+        "whatWasIDoing.excludePatterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [
+            ".*node_modules.*",
+            ".*\\.git.*",
+            ".*dist.*",
+            ".*build.*"
+          ],
+          "description": "File path patterns to exclude from tracking (regex patterns)"
+        },
+        "whatWasIDoing.autoShowResumePopup": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically show resume popup when returning to work"
+        },
+        "whatWasIDoing.todoKeywords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [
+            "TODO",
+            "FIXME",
+            "HACK",
+            "NOTE",
+            "BUG",
+            "XXX"
+          ],
+          "description": "Keywords to detect in comments for next-step hints"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "npm run check-types && npm run lint && node esbuild.js",
+    "watch": "npm-run-all -p watch:*",
+    "watch:esbuild": "node esbuild.js --watch",
+    "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
+    "package": "npm run check-types && npm run lint && node esbuild.js --production",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.106.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "typescript-eslint": "^8.46.3",
+    "eslint": "^9.39.1",
+    "esbuild": "^0.27.0",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.9.3",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
