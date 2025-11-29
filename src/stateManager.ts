@@ -29,11 +29,9 @@ export class StateManager {
         if (ctx1.functionName !== ctx2.functionName) {
             return false;
         }
-        
-        // Compare TODOs (convert to strings for comparison)
-        const todos1 = JSON.stringify(ctx1.nearbyTodos || []);
-        const todos2 = JSON.stringify(ctx2.nearbyTodos || []);
-        if (todos1 !== todos2) {
+
+        // Compare TODO comments
+        if (ctx1.todoComment !== ctx2.todoComment) {
             return false;
         }
 
@@ -67,7 +65,7 @@ export class StateManager {
                 StateManager.HISTORY_KEY,
                 trimmedHistory
             );
-            
+
             console.log('Saved new work context (different from previous)');
         } catch (error) {
             console.error('Failed to save context:', error);
