@@ -16,11 +16,45 @@ export class StateManager {
     }
 
     /**
+     * Check if two contexts are essentially the same (to avoid duplicates)
+     */
+    private areContextsSame(ctx1: WorkContext, ctx2: WorkContext): boolean {
+        // Compare key properties
+        if (ctx1.filePath !== ctx2.filePath) {
+            return false;
+        }
+        if (ctx1.line !== ctx2.line) {
+            return false;
+        }
+        if (ctx1.functionName !== ctx2.functionName) {
+            return false;
+        }
+        
+        // Compare TODOs (convert to strings for comparison)
+        const todos1 = JSON.stringify(ctx1.nearbyTodos || []);
+        const todos2 = JSON.stringify(ctx2.nearbyTodos || []);
+        if (todos1 !== todos2) {
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
      * Save a work context to history
      */
     public async saveContext(workContext: WorkContext): Promise<void> {
         try {
             const history = await this.getHistory();
+
+            // Check if the new context is the same as the last saved one
+            if (history.length > 0) {
+                const lastContext = history[0];
+                if (this.areContextsSame(workContext, lastContext)) {
+                    console.log('Context unchanged, skipping duplicate save');
+                    return; // Don't save duplicate
+                }
+            }
 
             // Add new context at the beginning
             history.unshift(workContext);
@@ -33,6 +67,8 @@ export class StateManager {
                 StateManager.HISTORY_KEY,
                 trimmedHistory
             );
+            
+            console.log('Saved new work context (different from previous)');
         } catch (error) {
             console.error('Failed to save context:', error);
             vscode.window.showErrorMessage('Failed to save work context');
