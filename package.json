@@ -3,17 +3,17 @@
   "displayName": "What Was I Doing",
   "description": "Automatically tracks your work context and helps you resume exactly where you left off after breaks",
   "version": "0.0.1",
-  "publisher": "your-publisher-name",
+  "publisher": "vansh-121",
   "author": {
-    "name": "Your Name"
+    "name": "Vansh Sethi"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/what-was-i-doing"
+    "url": "https://github.com/vansh-121/What-Was-I-Doing-Extension"
   },
   "bugs": {
-    "url": "https://github.com/your-username/what-was-i-doing/issues"
+    "url": "https://github.com/vansh-121/What-Was-I-Doing-Extension/issues"
   },
   "keywords": [
     "productivity",

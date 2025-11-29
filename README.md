@@ -1,4 +1,4 @@
-<!-- # 🧠 What Was I Doing?
+# 🧠 What Was I Doing?
 
 Never lose your train of thought when returning to code. This VS Code extension automatically tracks your work context and helps you resume exactly where you left off after breaks.
 
@@ -131,8 +131,8 @@ Get pulled into an unexpected meeting? Resume seamlessly afterward.
 ### Building from Source
 
 ```bash
-git clone https://github.com/your-username/what-was-i-doing
-cd what-was-i-doing
+git clone https://github.com/vansh-121/What-Was-I-Doing-Extension
+cd What-Was-I-Doing-Extension
 npm install
 npm run compile
 ```
@@ -173,9 +173,8 @@ MIT License - see LICENSE file for details
 
 ## 💬 Feedback
 
-Found a bug or have a feature request? [Open an issue](https://github.com/your-username/what-was-i-doing/issues)
+Found a bug or have a feature request? [Open an issue](https://github.com/vansh-121/What-Was-I-Doing-Extension/issues)
 
 ---
 
 **Enjoy coding with better context awareness!** 🎉
- -->
