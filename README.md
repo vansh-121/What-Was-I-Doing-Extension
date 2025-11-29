@@ -1,5 +1,7 @@
 # 🧠 What Was I Doing?
 
+> **[📥 Install from VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=VanshSethi.what-was-i-doing)** | **[🔗 Direct Link](https://marketplace.visualstudio.com/items?itemName=VanshSethi.what-was-i-doing)**
+
 Never lose your train of thought when returning to code. This VS Code extension automatically tracks your work context and helps you resume exactly where you left off after breaks.
 
 ## ✨ Features
@@ -29,10 +31,22 @@ When you return to work, get a helpful popup showing:
 
 ## 🚀 Getting Started
 
-1. Install the extension from VS Code Marketplace
-2. Start coding as usual
-3. Step away for a break
-4. Return and see the resume popup automatically
+### Installation
+
+**Option 1: VS Code Marketplace (Recommended)**
+1. Open VS Code
+2. Go to Extensions (Ctrl+Shift+X / Cmd+Shift+X)
+3. Search for "What Was I Doing"
+4. Click Install
+5. Start coding!
+
+**Option 2: Direct Link**
+- [Install directly from marketplace](https://marketplace.visualstudio.com/items?itemName=VanshSethi.what-was-i-doing)
+
+**Option 3: Command Line**
+```bash
+code --install-extension VanshSethi.what-was-i-doing
+```
 
 ## 💡 Usage
 
@@ -165,15 +179,21 @@ Initial release:
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please open issues or submit pull requests on GitHub.
+Contributions are welcome! Please open issues or submit pull requests on [GitHub](https://github.com/vansh-121/What-Was-I-Doing-Extension).
 
 ## 📄 License
 
 MIT License - see LICENSE file for details
 
-## 💬 Feedback
+---
 
-Found a bug or have a feature request? [Open an issue](https://github.com/vansh-121/What-Was-I-Doing-Extension/issues)
+## 📦 Installation
+
+**[Install from VS Code Marketplace →](https://marketplace.visualstudio.com/items?itemName=VanshSethi.what-was-i-doing)**
+
+- **Marketplace**: https://marketplace.visualstudio.com/items?itemName=VanshSethi.what-was-i-doing
+- **GitHub**: https://github.com/vansh-121/What-Was-I-Doing-Extension
+- **Publisher**: VanshSethi
 
 ---
 

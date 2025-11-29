@@ -2,6 +2,17 @@
 
 All notable changes to the "what-was-i-doing" extension will be documented in this file.
 
+**[📥 Install from VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=VanshSethi.what-was-i-doing)**
+
+## [1.0.1] - 2025-11-29
+
+### Added
+- ✨ Professional extension icon for marketplace
+- 📖 Enhanced documentation with marketplace link
+
+### Fixed
+- Fixed duplicate context detection logic
+
 ## [1.0.0] - 2025-11-29
 
 ### Added
@@ -27,4 +38,4 @@ All notable changes to the "what-was-i-doing" extension will be documented in th
 - Clear History
 
 ### Initial Release
-First public release of What Was I Doing extension.
+First public release of What Was I Doing extension on VS Code Marketplace.
