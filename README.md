@@ -61,8 +61,7 @@ Get back to work instantly with helpful context.
 
 - 📄 **Last Active File** - Jump to the exact file you were editing
 - 🔍 **Function/Method** - See the function or class you were in
-- � **Auto-Generated Notes** - Automatic context summary (e.g., "Fixing auth bug in login.ts")
-- �📝 **Next Steps** - View TODO/FIXME comments for context
+- � **Auto-Generated Notes** - Automatic context summary (e.g., "Fixing auth bug in login.ts")- 🔀 **Git Awareness** - Branch name, last commit, and uncommitted files count- �📝 **Next Steps** - View TODO/FIXME comments for context
 - ⏰ **Time Tracking** - Know how long you've been away
 
 </td>
@@ -164,6 +163,26 @@ The notes appear in:
 - 🔔 Resume popup when you return
 - 📋 History quick pick menu
 - 🕒 Status bar tooltips
+
+### 🔀 Git Awareness
+
+The extension automatically captures Git context when saving your work:
+
+**Captured Information:**
+- 🌿 Branch name (e.g., `feature/auth-fix`)
+- 💬 Last commit message
+- 📝 Number of uncommitted files
+
+**Example Display:**
+```
+🔀 Branch: feature/auth-fix • Uncommitted files: 3
+💬 Last commit: feat: add JWT token validation
+```
+
+This helps you quickly understand:
+- What feature/fix you were working on
+- If you have uncommitted changes
+- The last stable point in your work
 
 ## ⚙️ Configuration
 
@@ -392,7 +411,7 @@ See [CHANGELOG.md](CHANGELOG.md) for detailed release notes.
 ### Latest Version: 1.0.3
 
 - 💡 **NEW**: Automatic context notes generation
-- 📝 Intelligent notes from TODO comments, function names, and file context
+- � **NEW**: Git awareness (branch, commit, uncommitted files)- 🎨 **NEW**: Beautiful styled webview popup with modern UI- �📝 Intelligent notes from TODO comments, function names, and file context
 - 🎯 Enhanced resume experience with prominent note display
 - 📋 Improved history quick pick with note descriptions
 - ✨ Professional extension icon

@@ -11,12 +11,21 @@ All notable changes to the "what-was-i-doing" extension will be documented in th
   - Examples: "Fixing auth bug in login.ts, need to check JWT expiry"
   - Notes are derived from TODO comments, function names, and file context
   - Displayed prominently in resume popup and history quick pick
+- � **Git Awareness** - Automatically captures Git information with each context
+  - Branch name (e.g., "feature/auth-fix")
+  - Last commit message
+  - Number of uncommitted/modified files
+  - Helps developers track what feature they were working on
+- 🎨 **Dual-Popup UX Strategy** - Perfect balance of information and action
+  - 🔔 Quiet notification when context is SAVED (non-intrusive, informational)
+  - 🚀 Styled QuickPick when you RETURN (action-driven, focused on continuity)
+  - Best of both worlds for developer experience
 - 📝 Enhanced context information for better resume experience
 
 ### Improved
-- 🎯 Resume popup now shows auto-generated notes first for quick context
-- 📋 History quick pick displays notes as descriptions for easier scanning
-- 📖 Updated README with automatic notes documentation and examples
+- 🎯 Resume popup now shows auto-generated notes and Git info for quick context
+- 📋 History quick pick displays Git branch and uncommitted files count
+- 📖 Updated README with automatic notes and Git awareness documentation
 
 ## [1.0.2] - 2025-11-29
 

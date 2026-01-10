@@ -98,7 +98,7 @@ export async function activate(context: vscode.ExtensionContext) {
 
 	// Set up idle detection callback
 	activityTracker.onIdle(async (workContext) => {
-		if (!stateManager || !contextExtractor) {
+		if (!stateManager || !contextExtractor || !resumePopup) {
 			return;
 		}
 
@@ -113,6 +113,9 @@ export async function activate(context: vscode.ExtensionContext) {
 		// Save to state
 		await stateManager.saveContext(enhancedContext);
 
+		// Show quiet notification
+		resumePopup.showSavedNotification(enhancedContext);
+
 		console.log('Saved work context:', enhancedContext);
 	});
 
@@ -124,11 +127,13 @@ export async function activate(context: vscode.ExtensionContext) {
 
 	// Save context on specific triggers
 	const saveCurrentContext = async () => {
-		if (activityTracker && stateManager && contextExtractor) {
+		if (activityTracker && stateManager && contextExtractor && resumePopup) {
 			const currentContext = activityTracker.getCurrentContext();
 			if (currentContext && shouldTrackFile(currentContext.filePath, config.excludePatterns)) {
 				const enhancedContext = await contextExtractor.enhanceContext(currentContext);
 				await stateManager.saveContext(enhancedContext);
+				// Show quiet notification
+				resumePopup.showSavedNotification(enhancedContext);
 				console.log('Saved context:', enhancedContext);
 			}
 		}
@@ -248,7 +253,7 @@ export async function activate(context: vscode.ExtensionContext) {
 
 	context.subscriptions.push(
 		vscode.commands.registerCommand('whatWasIDoing.saveCurrentContext', async () => {
-			if (!activityTracker || !stateManager || !contextExtractor) {
+			if (!activityTracker || !stateManager || !contextExtractor || !resumePopup) {
 				return;
 			}
 
@@ -256,7 +261,8 @@ export async function activate(context: vscode.ExtensionContext) {
 			if (currentContext) {
 				const enhancedContext = await contextExtractor.enhanceContext(currentContext);
 				await stateManager.saveContext(enhancedContext);
-				vscode.window.showInformationMessage('Current context saved');
+				// Show quiet notification instead of intrusive message
+				resumePopup.showSavedNotification(enhancedContext);
 				updateStatusBar(enhancedContext);
 			} else {
 				vscode.window.showWarningMessage('No active context to save');

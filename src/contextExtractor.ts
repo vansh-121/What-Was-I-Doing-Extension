@@ -1,11 +1,17 @@
 import * as vscode from 'vscode';
 import { WorkContext } from './types';
+import { GitHelper } from './gitHelper';
 
 /**
  * Extracts code context information from the active editor
  */
 export class ContextExtractor {
     private todoKeywords: string[] = ['TODO', 'FIXME', 'HACK', 'NOTE', 'BUG', 'XXX'];
+    private gitHelper: GitHelper;
+
+    constructor() {
+        this.gitHelper = new GitHelper();
+    }
 
     /**
      * Set custom TODO keywords to search for
@@ -15,7 +21,7 @@ export class ContextExtractor {
     }
 
     /**
-     * Enhance a WorkContext with function name, TODO comments, and auto-generated note
+     * Enhance a WorkContext with function name, TODO comments, auto-generated note, and git info
      */
     public async enhanceContext(context: WorkContext): Promise<WorkContext> {
         try {
@@ -36,11 +42,17 @@ export class ContextExtractor {
             // Generate automatic note
             const note = this.generateAutoNote(context.filePath, functionName, todoComment);
 
+            // Get Git information
+            const gitInfo = await this.gitHelper.getGitInfo(context.filePath);
+
             return {
                 ...context,
                 functionName,
                 todoComment,
                 note,
+                gitBranch: gitInfo.branch,
+                gitLastCommit: gitInfo.lastCommit,
+                gitUncommittedFiles: gitInfo.uncommittedFiles,
             };
         } catch (error) {
             console.error('Failed to enhance context:', error);
