@@ -4,6 +4,20 @@ All notable changes to the "what-was-i-doing" extension will be documented in th
 
 **[📥 Install from VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=VanshSethi.what-was-i-doing)**
 
+## [1.0.3] - 2026-01-10
+
+### Added
+- 💡 **Automatic Context Notes** - Extension now generates helpful notes automatically when context is saved
+  - Examples: "Fixing auth bug in login.ts, need to check JWT expiry"
+  - Notes are derived from TODO comments, function names, and file context
+  - Displayed prominently in resume popup and history quick pick
+- 📝 Enhanced context information for better resume experience
+
+### Improved
+- 🎯 Resume popup now shows auto-generated notes first for quick context
+- 📋 History quick pick displays notes as descriptions for easier scanning
+- 📖 Updated README with automatic notes documentation and examples
+
 ## [1.0.2] - 2025-11-29
 
 ### Added
@@ -12,12 +26,15 @@ All notable changes to the "what-was-i-doing" extension will be documented in th
 - ❓ FAQ section for common questions
 - 🔒 Detailed privacy and security information
 - 📋 Comprehensive configuration documentation
+- 💾 **Context saving on file switch** - Now saves context when switching between files after 2+ minutes of editing
+- 🚪 **Save on deactivate** - Context is automatically saved when VS Code closes or extension deactivates
 
 ### Improved
 - 🎯 Better use cases presentation with examples
 - 💡 Enhanced usage instructions with quick start guide
 - 📊 Improved feature descriptions with visual tables
 - 🔧 More detailed configuration options with examples
+- 🔄 Smarter context tracking with better timing logic
 
 ## [1.0.1] - 2025-11-29
 

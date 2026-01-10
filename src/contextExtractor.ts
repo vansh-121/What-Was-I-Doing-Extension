@@ -15,7 +15,7 @@ export class ContextExtractor {
     }
 
     /**
-     * Enhance a WorkContext with function name and TODO comments
+     * Enhance a WorkContext with function name, TODO comments, and auto-generated note
      */
     public async enhanceContext(context: WorkContext): Promise<WorkContext> {
         try {
@@ -33,10 +33,14 @@ export class ContextExtractor {
                 context.line
             );
 
+            // Generate automatic note
+            const note = this.generateAutoNote(context.filePath, functionName, todoComment);
+
             return {
                 ...context,
                 functionName,
                 todoComment,
+                note,
             };
         } catch (error) {
             console.error('Failed to enhance context:', error);
@@ -188,6 +192,29 @@ export class ContextExtractor {
         }
 
         return undefined;
+    }
+
+    /**
+     * Generate an automatic note based on the current context
+     */
+    private generateAutoNote(filePath: string, functionName?: string, todoComment?: string): string {
+        const fileName = filePath.split(/[\\/]/).pop() || 'unknown file';
+
+        // If there's a TODO comment, use it as the primary context
+        if (todoComment) {
+            if (functionName) {
+                return `${todoComment.replace(/^(TODO|FIXME|HACK|NOTE|BUG|XXX):\s*/i, '')} in ${functionName}`;
+            }
+            return todoComment.replace(/^(TODO|FIXME|HACK|NOTE|BUG|XXX):\s*/i, '');
+        }
+
+        // If there's a function name, describe what you're working on
+        if (functionName) {
+            return `Working on ${functionName} in ${fileName}`;
+        }
+
+        // Fallback to just the file name
+        return `Editing ${fileName}`;
     }
 
     /**

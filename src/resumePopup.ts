@@ -91,12 +91,17 @@ export class ResumePopup {
         let message = `🧠 Welcome back! You were last active ${timeAgo}\n`;
         message += `📄 File: ${fileName}`;
 
+        // Show the auto-generated note prominently
+        if (context.note) {
+            message += `\n💡 ${context.note}`;
+        }
+
         if (context.functionName) {
-            message += `\n🔍 Editing: ${context.functionName}`;
+            message += `\n🔍 Location: ${context.functionName}`;
         }
 
         if (context.todoComment) {
-            message += `\n📝 Next step: ${context.todoComment}`;
+            message += `\n📝 ${context.todoComment}`;
         }
 
         return message;
@@ -138,7 +143,7 @@ export class ResumePopup {
 
         const items = contexts.map(ctx => ({
             label: `$(file) ${path.basename(ctx.filePath)}`,
-            description: ctx.functionName || `Line ${ctx.line + 1}`,
+            description: ctx.note || ctx.functionName || `Line ${ctx.line + 1}`,
             detail: `${this.formatTimeAgo(ctx.timestamp)}${ctx.todoComment ? ` • ${ctx.todoComment}` : ''}`,
             context: ctx,
         }));

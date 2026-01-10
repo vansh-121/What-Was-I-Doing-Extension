@@ -12,6 +12,8 @@ export interface WorkContext {
     functionName?: string;
     /** TODO/FIXME comment found near the cursor position */
     todoComment?: string;
+    /** Automatically generated note describing what you were working on */
+    note?: string;
     /** Timestamp when this context was saved */
     timestamp: number;
     /** Workspace folder path this context belongs to */
