@@ -59,18 +59,23 @@ export class ResumePopup {
             message += `\n🔀 ${context.gitBranch}${uncommitted}`;
         }
 
+        // Define button constants for robustness
+        const continueButton = '✅ Continue';
+        const viewHistoryButton = '📋 View History';
+        const dismissButton = '✖ Dismiss';
+
         // Show notification with action buttons
         const result = await vscode.window.showInformationMessage(
             message,
             { modal: false },
-            '✅ Continue',
-            '📋 View History',
-            '✖ Dismiss'
+            continueButton,
+            viewHistoryButton,
+            dismissButton
         );
 
-        if (result === '✅ Continue') {
+        if (result === continueButton) {
             await this.navigateToContext(context);
-        } else if (result === '📋 View History') {
+        } else if (result === viewHistoryButton) {
             await vscode.commands.executeCommand('whatWasIDoing.showHistory');
         }
     }
