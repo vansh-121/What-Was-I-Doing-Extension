@@ -77,7 +77,7 @@ export async function activate(context: vscode.ExtensionContext) {
 	console.log('What Was I Doing extension is now active');
 
 	// Show visible confirmation that extension loaded
-	vscode.window.showInformationMessage('✅ What Was I Doing extension activated!');
+	// vscode.window.showInformationMessage('✅ What Was I Doing extension activated!');
 
 	extensionContext = context;
 	const config = getConfig();
@@ -116,6 +116,9 @@ export async function activate(context: vscode.ExtensionContext) {
 		// Show quiet notification
 		resumePopup.showSavedNotification(enhancedContext);
 
+		// Update status bar immediately
+		updateStatusBar(enhancedContext);
+
 		console.log('Saved work context:', enhancedContext);
 	});
 
@@ -134,6 +137,8 @@ export async function activate(context: vscode.ExtensionContext) {
 				await stateManager.saveContext(enhancedContext);
 				// Show quiet notification
 				resumePopup.showSavedNotification(enhancedContext);
+				// Update status bar immediately
+				updateStatusBar(enhancedContext);
 				console.log('Saved context:', enhancedContext);
 			}
 		}

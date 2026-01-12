@@ -21,11 +21,11 @@ export class ResumePopup {
             message += ` 🔀 ${context.gitBranch}`;
         }
 
-        // Show as an information message that auto-dismisses (no buttons = non-intrusive)
-        vscode.window.showInformationMessage(message);
+        // // Show as an information message that auto-dismisses (no buttons = non-intrusive)
+        // vscode.window.showInformationMessage(message);
 
         // Also show in status bar
-        vscode.window.setStatusBarMessage(message, 5000);
+        vscode.window.setStatusBarMessage(message, 10000);
     }
 
     /**
