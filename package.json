@@ -1,8 +1,8 @@
 {
   "name": "what-was-i-doing",
-  "displayName": "What Was I Doing",
+  "displayName": "What Was I Doing?",
   "description": "Automatically tracks your work context and helps you resume exactly where you left off after breaks",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "publisher": "VanshSethi",
   "author": {
     "name": "Vansh Sethi"
@@ -11,12 +11,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vansh-121/What-Was-I-Doing-Extension"
+    "url": "https://github.com/vansh-121/what-was-i-doing"
   },
   "bugs": {
-    "url": "https://github.com/vansh-121/What-Was-I-Doing-Extension/issues"
+    "url": "https://github.com/vansh-121/what-was-i-doing/issues"
   },
-  "homepage": "https://marketplace.visualstudio.com/items?itemName=VanshSethi.what-was-i-doing",
+  "homepage": "https://whatwasidoing.dev",
   "keywords": [
     "productivity",
     "context",
