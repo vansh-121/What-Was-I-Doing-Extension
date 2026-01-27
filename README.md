@@ -218,12 +218,12 @@ Minutes of inactivity before context is automatically saved.
 Maximum number of work sessions to keep in history.
 
 - **Type**: `number`
-- **Default**: `10`
+- **Default**: `30`
 - **Range**: 1-50
 
 ```json
 {
-  "whatWasIDoing.maxHistorySize": 20
+  "whatWasIDoing.maxHistorySize": 30
 }
 ```
 
