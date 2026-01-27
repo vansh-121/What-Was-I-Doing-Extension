@@ -5,7 +5,7 @@
 <h1 align="center">What Was I Doing?</h1>
 
 <p align="center">
-  <strong>Never lose your train of thought when returning to code</strong>
+  <strong>Never Lose Your Coding Context</strong>
 </p>
 
 <p align="center">
