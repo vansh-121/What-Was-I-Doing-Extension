@@ -466,7 +466,13 @@ Press `F5` in VS Code to launch Extension Development Host.
 
 See [CHANGELOG.md](CHANGELOG.md) for detailed release notes.
 
-### Latest Version: 1.0.6
+### Latest Version: 1.0.7
+
+- ✨ **NEW**: Added a beautiful interactive Walkthrough to guide new users on first install.
+- 🚀 **IMPROVED**: Refined marketplace copy and onboarding experience.
+- 🔔 **NEW**: Automatic first-run popup to open the walkthrough immediately.
+
+### Version: 1.0.6
 
 - 🐛 **FIXED**: Custom TODO keywords now properly respected in note generation
 - 🐛 **FIXED**: TODO comment changes now correctly trigger new context saves
