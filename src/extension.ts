@@ -76,8 +76,22 @@ function formatTimeAgo(timestamp: number): string {
 export async function activate(context: vscode.ExtensionContext) {
 	console.log('What Was I Doing extension is now active');
 
-	// Show visible confirmation that extension loaded
-	// vscode.window.showInformationMessage('✅ What Was I Doing extension activated!');
+	// Check if this is the first time the extension is running
+	const isFirstRun = !context.globalState.get('whatWasIDoing.hasRunBefore');
+	if (isFirstRun) {
+		// Open the walkthrough automatically
+		vscode.commands.executeCommand('workbench.action.openWalkthrough', 'VanshSethi.what-was-i-doing#whatWasIDoing.walkthrough', false);
+		
+		vscode.window.showInformationMessage(
+			'✅ What Was I Doing is now tracking your context! Take a break and we\'ll remember where you left off.',
+			'View Settings'
+		).then(selection => {
+			if (selection === 'View Settings') {
+				vscode.commands.executeCommand('workbench.action.openSettings', 'whatWasIDoing');
+			}
+		});
+		context.globalState.update('whatWasIDoing.hasRunBefore', true);
+	}
 
 	extensionContext = context;
 	const config = getConfig();
