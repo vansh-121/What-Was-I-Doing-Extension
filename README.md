@@ -10,19 +10,19 @@
 
 <p align="center">
   <a href="https://whatwasidoing.dev">
-    <img src="https://img.shields.io/badge/Website-whatwasidoing.dev-blue?style=for-the-badge&logo=google-chrome" alt="Website">
+    <img src="https://img.shields.io/badge/Website-whatwasidoing.dev-blue?style=flat&logo=google-chrome" alt="Website">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=VanshSethi.what-was-i-doing">
-    <img src="https://img.shields.io/visual-studio-marketplace/v/VanshSethi.what-was-i-doing?style=for-the-badge&logo=visual-studio-code&label=VS%20Code%20Marketplace" alt="VS Code Marketplace Version">
+    <img src="https://badgen.net/vs-marketplace/v/VanshSethi.what-was-i-doing?color=blue" alt="VS Code Marketplace Version">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=VanshSethi.what-was-i-doing">
-    <img src="https://img.shields.io/visual-studio-marketplace/d/VanshSethi.what-was-i-doing?style=for-the-badge&logo=visual-studio-code" alt="Downloads">
+    <img src="https://badgen.net/vs-marketplace/i/VanshSethi.what-was-i-doing?color=green" alt="Downloads">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=VanshSethi.what-was-i-doing">
-    <img src="https://img.shields.io/visual-studio-marketplace/r/VanshSethi.what-was-i-doing?style=for-the-badge&logo=visual-studio-code" alt="Rating">
+    <img src="https://badgen.net/vs-marketplace/rating/VanshSethi.what-was-i-doing?color=orange" alt="Rating">
   </a>
   <a href="https://github.com/vansh-121/what-was-i-doing/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/vansh-121/what-was-i-doing?style=for-the-badge" alt="License">
+    <img src="https://img.shields.io/github/license/vansh-121/what-was-i-doing?style=flat" alt="License">
   </a>
 </p>
 
@@ -466,7 +466,7 @@ Press `F5` in VS Code to launch Extension Development Host.
 
 See [CHANGELOG.md](CHANGELOG.md) for detailed release notes.
 
-### Latest Version: 1.0.7
+### Latest Version: 1.0.8
 
 - ✨ **NEW**: Added a beautiful interactive Walkthrough to guide new users on first install.
 - 🚀 **IMPROVED**: Refined marketplace copy and onboarding experience.

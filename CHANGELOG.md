@@ -4,6 +4,11 @@ All notable changes to the "what-was-i-doing" extension will be documented in th
 
 **[🌐 Website](https://whatwasidoing.dev)** • **[📥 Install from VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=VanshSethi.what-was-i-doing)**
 
+## [1.0.8] - 2026-05-01
+
+### Fixed
+- Minor changes & documentation update.
+
 ## [1.0.7] - 2026-05-01
 
 ### Added
