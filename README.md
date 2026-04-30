@@ -10,19 +10,19 @@
 
 <p align="center">
   <a href="https://whatwasidoing.dev">
-    <img src="https://img.shields.io/badge/Website-whatwasidoing.dev-blue?style=for-the-badge&logo=google-chrome" alt="Website">
+    <img src="https://img.shields.io/badge/Website-whatwasidoing.dev-blue?style=flat&logo=google-chrome" alt="Website">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=VanshSethi.what-was-i-doing">
-    <img src="https://img.shields.io/visual-studio-marketplace/v/VanshSethi.what-was-i-doing?style=for-the-badge&logo=visual-studio-code&label=VS%20Code%20Marketplace" alt="VS Code Marketplace Version">
+    <img src="https://badgen.net/vs-marketplace/v/VanshSethi.what-was-i-doing?color=blue" alt="VS Code Marketplace Version">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=VanshSethi.what-was-i-doing">
-    <img src="https://img.shields.io/visual-studio-marketplace/d/VanshSethi.what-was-i-doing?style=for-the-badge&logo=visual-studio-code" alt="Downloads">
+    <img src="https://badgen.net/vs-marketplace/i/VanshSethi.what-was-i-doing?color=green" alt="Downloads">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=VanshSethi.what-was-i-doing">
-    <img src="https://img.shields.io/visual-studio-marketplace/r/VanshSethi.what-was-i-doing?style=for-the-badge&logo=visual-studio-code" alt="Rating">
+    <img src="https://badgen.net/vs-marketplace/rating/VanshSethi.what-was-i-doing?color=orange" alt="Rating">
   </a>
   <a href="https://github.com/vansh-121/what-was-i-doing/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/vansh-121/what-was-i-doing?style=for-the-badge" alt="License">
+    <img src="https://img.shields.io/github/license/vansh-121/what-was-i-doing?style=flat" alt="License">
   </a>
 </p>
 
@@ -39,7 +39,19 @@
 
 ## 📖 About
 
-**What Was I Doing?** is a VS Code extension that automatically tracks your work context and helps you resume exactly where you left off after breaks. Perfect for developers who switch between tasks, take coffee breaks, or need to context-switch frequently.
+**What Was I Doing?** is your silent productivity assistant. 
+
+Developers are constantly interrupted. Don't waste mental energy trying to remember your train of thought after a context switch. This extension seamlessly tracks your work context in the background and helps you resume exactly where you left off. 
+
+Whether you:
+- Get pulled into an unexpected meeting
+- Switch to another application
+- Take a coffee break
+- Close your laptop for the weekend
+
+...the moment you return, a helpful popup instantly reminds you what file you were in, what function you were editing, and the exact next step you were supposed to take based on your TODO comments.
+
+**100% Private, 100% Local.** We never send your code or data anywhere.
 
 ## 🎬 See It In Action
 
@@ -454,7 +466,13 @@ Press `F5` in VS Code to launch Extension Development Host.
 
 See [CHANGELOG.md](CHANGELOG.md) for detailed release notes.
 
-### Latest Version: 1.0.6
+### Latest Version: 1.0.8
+
+- ✨ **NEW**: Added a beautiful interactive Walkthrough to guide new users on first install.
+- 🚀 **IMPROVED**: Refined marketplace copy and onboarding experience.
+- 🔔 **NEW**: Automatic first-run popup to open the walkthrough immediately.
+
+### Version: 1.0.6
 
 - 🐛 **FIXED**: Custom TODO keywords now properly respected in note generation
 - 🐛 **FIXED**: TODO comment changes now correctly trigger new context saves

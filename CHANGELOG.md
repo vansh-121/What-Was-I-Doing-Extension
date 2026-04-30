@@ -4,6 +4,24 @@ All notable changes to the "what-was-i-doing" extension will be documented in th
 
 **[🌐 Website](https://whatwasidoing.dev)** • **[📥 Install from VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=VanshSethi.what-was-i-doing)**
 
+## [1.0.8] - 2026-05-01
+
+### Fixed
+- Minor changes & documentation update.
+
+## [1.0.7] - 2026-05-01
+
+### Added
+- ✨ **Interactive Walkthrough** - Added a beautiful interactive walkthrough to guide new users on first install.
+- 🔔 **First-Run Popup** - Automatic popup on first run to open the walkthrough immediately.
+- 🚀 **Refined Onboarding** - Improved marketplace copy and onboarding experience to help users quickly understand the value.
+
+## [1.0.6] - 2026-04-30
+
+### Fixed
+- 🐛 **TODO Keywords** - Custom TODO keywords now properly respected in note generation.
+- 🐛 **Context Saves** - TODO comment changes now correctly trigger new context saves.
+
 ## [1.0.4] - 2026-01-10
 
 ### Fixed

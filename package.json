@@ -2,7 +2,7 @@
   "name": "what-was-i-doing",
   "displayName": "What Was I Doing?",
   "description": "Automatically tracks your work context and helps you resume exactly where you left off after breaks",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "publisher": "VanshSethi",
   "author": {
     "name": "Vansh Sethi"
@@ -36,6 +36,39 @@
   ],
   "main": "./dist/extension.js",
   "contributes": {
+    "walkthroughs": [
+      {
+        "id": "whatWasIDoing.walkthrough",
+        "title": "Welcome to What Was I Doing!",
+        "description": "Never lose your coding context again. Here is how this extension supercharges your productivity.",
+        "steps": [
+          {
+            "id": "whatWasIDoing.step1",
+            "title": "Stay Focused, Let Us Track",
+            "description": "Just write your code. We silently monitor your active files, cursor positions, and nearby TODOs. Completely local, completely private.",
+            "media": {
+              "markdown": "assets/walkthrough-step1.md"
+            }
+          },
+          {
+            "id": "whatWasIDoing.step2",
+            "title": "Step Away Freely",
+            "description": "Whether you switch windows, take a coffee break, or end your day, your context is automatically saved the moment you step away.",
+            "media": {
+              "markdown": "assets/walkthrough-step2.md"
+            }
+          },
+          {
+            "id": "whatWasIDoing.step3",
+            "title": "Pick Up Exactly Where You Left Off",
+            "description": "Whenever you return, instantly see what you were working on. Jump right back into the zone without wasting time.",
+            "media": {
+              "markdown": "assets/walkthrough-step3.md"
+            }
+          }
+        ]
+      }
+    ],
     "commands": [
       {
         "command": "whatWasIDoing.showLastContext",
