@@ -13,19 +13,19 @@
     <img src="https://img.shields.io/badge/Website-whatwasidoing.dev-blue?style=flat&logo=google-chrome" alt="Website">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=VanshSethi.what-was-i-doing">
-    <img src="https://badgen.net/vs-marketplace/v/VanshSethi.what-was-i-doing?color=blue" alt="VS Code Marketplace Version">
+    <img src="https://img.shields.io/visual-studio-marketplace/v/VanshSethi.what-was-i-doing?style=flat&color=blue&label=VS%20Marketplace" alt="VS Code Marketplace Version">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=VanshSethi.what-was-i-doing">
-    <img src="https://badgen.net/vs-marketplace/i/VanshSethi.what-was-i-doing?color=green" alt="Downloads">
+    <img src="https://img.shields.io/visual-studio-marketplace/i/VanshSethi.what-was-i-doing?style=flat&color=green&label=Installs" alt="Downloads">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=VanshSethi.what-was-i-doing">
-    <img src="https://badgen.net/vs-marketplace/rating/VanshSethi.what-was-i-doing?color=orange" alt="Rating">
+    <img src="https://img.shields.io/visual-studio-marketplace/r/VanshSethi.what-was-i-doing?style=flat&color=orange" alt="Rating">
   </a>
   <a href="https://open-vsx.org/extension/VanshSethi/what-was-i-doing">
-    <img src="https://img.shields.io/open-vsx/v/VanshSethi/what-was-i-doing?color=purple" alt="Open VSX Version">
+    <img src="https://img.shields.io/open-vsx/v/VanshSethi/what-was-i-doing?style=flat&color=purple&label=Open%20VSX" alt="Open VSX Version">
   </a>
   <a href="https://open-vsx.org/extension/VanshSethi/what-was-i-doing">
-    <img src="https://img.shields.io/open-vsx/dt/VanshSethi/what-was-i-doing?color=purple" alt="Open VSX Downloads">
+    <img src="https://img.shields.io/open-vsx/dt/VanshSethi/what-was-i-doing?style=flat&color=purple" alt="Open VSX Downloads">
   </a>
   <a href="https://github.com/vansh-121/what-was-i-doing/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/vansh-121/what-was-i-doing?style=flat" alt="License">
