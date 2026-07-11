@@ -21,6 +21,12 @@
   <a href="https://marketplace.visualstudio.com/items?itemName=VanshSethi.what-was-i-doing">
     <img src="https://badgen.net/vs-marketplace/rating/VanshSethi.what-was-i-doing?color=orange" alt="Rating">
   </a>
+  <a href="https://open-vsx.org/extension/VanshSethi/what-was-i-doing">
+    <img src="https://img.shields.io/open-vsx/v/VanshSethi/what-was-i-doing?color=purple" alt="Open VSX Version">
+  </a>
+  <a href="https://open-vsx.org/extension/VanshSethi/what-was-i-doing">
+    <img src="https://img.shields.io/open-vsx/dt/VanshSethi/what-was-i-doing?color=purple" alt="Open VSX Downloads">
+  </a>
   <a href="https://github.com/vansh-121/what-was-i-doing/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/vansh-121/what-was-i-doing?style=flat" alt="License">
   </a>
@@ -39,11 +45,12 @@
 
 ## 📖 About
 
-**What Was I Doing?** is your silent productivity assistant. 
+**What Was I Doing?** is your silent productivity assistant.
 
-Developers are constantly interrupted. Don't waste mental energy trying to remember your train of thought after a context switch. This extension seamlessly tracks your work context in the background and helps you resume exactly where you left off. 
+Developers are constantly interrupted. Don't waste mental energy trying to remember your train of thought after a context switch. This extension seamlessly tracks your work context in the background and helps you resume exactly where you left off.
 
 Whether you:
+
 - Get pulled into an unexpected meeting
 - Switch to another application
 - Take a coffee break
@@ -61,7 +68,7 @@ Get up and running in seconds:
 
 ![Installing What Was I Doing Extension](https://raw.githubusercontent.com/vansh-121/what-was-i-doing/master/assets/clips/Clip1.gif)
 
-*Install from VS Code Marketplace and the extension automatically starts tracking your work context*
+_Install from VS Code Marketplace and the extension automatically starts tracking your work context_
 
 ### ⏰ Track Your Work Timeline
 
@@ -69,7 +76,7 @@ Never lose track of when you last worked on something. See exactly what you were
 
 ![Work History Timeline Feature](https://raw.githubusercontent.com/vansh-121/what-was-i-doing/master/assets/clips/Clip2.gif)
 
-*View your complete work history with timestamps — "What was I working on 50 min ago?" is answered instantly*
+_View your complete work history with timestamps — "What was I working on 50 min ago?" is answered instantly_
 
 ### 📜 Browse Complete Work History
 
@@ -77,7 +84,7 @@ Access all your previous work sessions and jump back to any context with a singl
 
 ![Complete Work History View](https://raw.githubusercontent.com/vansh-121/what-was-i-doing/master/assets/clips/Clip3.gif)
 
-*Browse through all your saved work contexts and click any session to instantly resume from that exact point*
+_Browse through all your saved work contexts and click any session to instantly resume from that exact point_
 
 ### 🎯 Command Palette Integration
 
@@ -85,7 +92,7 @@ Quick access to all extension features directly from the Command Palette:
 
 ![Command Palette Features](https://raw.githubusercontent.com/vansh-121/what-was-i-doing/master/assets/clips/Clip4.gif)
 
-*Search "What Was I Doing" in the Command Palette to see all available commands and features at your fingertips*
+_Search "What Was I Doing" in the Command Palette to see all available commands and features at your fingertips_
 
 ### ⚙️ Customize to Your Workflow
 
@@ -93,7 +100,7 @@ Configure the extension to match your preferences — adjust popup behavior, idl
 
 ![Extension Settings Configuration](https://raw.githubusercontent.com/vansh-121/what-was-i-doing/master/assets/clips/Clip5.gif)
 
-*Fine-tune settings like popup display, idle timeout minutes, max history size, exclude patterns, and other options to fit your workflow perfectly*
+_Fine-tune settings like popup display, idle timeout minutes, max history size, exclude patterns, and other options to fit your workflow perfectly_
 
 ## ✨ Features
 
@@ -161,18 +168,38 @@ Customize the extension to fit your workflow.
 </a>
 
 #### Method 1: VS Code UI (Recommended)
+
 1. Open **VS Code**
 2. Press `Ctrl+Shift+X` (Windows/Linux) or `Cmd+Shift+X` (Mac)
 3. Search for **"What Was I Doing"**
 4. Click **Install**
 
 #### Method 2: Command Line
+
 ```bash
 code --install-extension VanshSethi.what-was-i-doing
 ```
 
 #### Method 3: Direct Link
+
 [→ Install from VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=VanshSethi.what-was-i-doing)
+
+### From Open VSX Registry (for VSCodium)
+
+<a href="https://open-vsx.org/extension/VanshSethi/what-was-i-doing">
+  <img src="https://img.shields.io/badge/Install-Open%20VSX-purple?style=for-the-badge&logo=eclipse-che" alt="Install from Open VSX">
+</a>
+
+#### Method 1: UI
+1. Open **VSCodium** / **Eclipse Theia**
+2. Open the Extensions view (`Ctrl+Shift+X`)
+3. Search for **"What Was I Doing"**
+4. Click **Install**
+
+#### Method 2: Command Line
+```bash
+codium --install-extension VanshSethi.what-was-i-doing
+```
 
 ## 💡 Usage
 
@@ -187,16 +214,17 @@ code --install-extension VanshSethi.what-was-i-doing
 
 Open the Command Palette with `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (Mac):
 
-| Command | Description | Icon |
-|---------|-------------|------|
-| `What Was I Doing: Show Last Context` | View your most recent work context | 🕒 |
-| `What Was I Doing: View History` | Browse all saved work sessions | 📋 |
-| `What Was I Doing: Save Current Context` | Manually save your current position | 💾 |
-| `What Was I Doing: Clear History` | Reset all saved contexts | 🗑️ |
+| Command                                  | Description                         | Icon |
+| ---------------------------------------- | ----------------------------------- | ---- |
+| `What Was I Doing: Show Last Context`    | View your most recent work context  | 🕒   |
+| `What Was I Doing: View History`         | Browse all saved work sessions      | 📋   |
+| `What Was I Doing: Save Current Context` | Manually save your current position | 💾   |
+| `What Was I Doing: Clear History`        | Reset all saved contexts            | 🗑️   |
 
 ### Status Bar Integration
 
 Look for the **clock icon** (🕒) in your status bar:
+
 - Shows time since last activity (e.g., "2m ago", "1h ago")
 - Click it to quickly view your work history
 - Hover for tooltip with last active function/file
@@ -206,6 +234,7 @@ Look for the **clock icon** (🕒) in your status bar:
 The extension automatically generates helpful notes about what you were working on:
 
 **Examples:**
+
 ```
 💡 Fixing auth bug in login.ts, need to check JWT expiry in Method: validateToken()
 💡 Working on Method: fetchUserData() in api.ts
@@ -213,11 +242,13 @@ The extension automatically generates helpful notes about what you were working 
 ```
 
 These notes are generated from:
+
 - TODO/FIXME comments near your cursor
 - Function/method names you were editing
 - The file you were working in
 
 The notes appear in:
+
 - 🔔 Resume popup when you return
 - 📋 History quick pick menu
 - 🕒 Status bar tooltips
@@ -227,17 +258,20 @@ The notes appear in:
 The extension automatically captures Git context when saving your work:
 
 **Captured Information:**
+
 - 🌿 Branch name (e.g., `feature/auth-fix`)
 - 💬 Last commit message
 - 📝 Number of uncommitted files
 
 **Example Display:**
+
 ```
 🔀 Branch: feature/auth-fix • Uncommitted files: 3
 💬 Last commit: feat: add JWT token validation
 ```
 
 This helps you quickly understand:
+
 - What feature/fix you were working on
 - If you have uncommitted changes
 - The last stable point in your work
@@ -327,12 +361,7 @@ Keywords to detect in comments for next-step hints.
 
 ```json
 {
-  "whatWasIDoing.todoKeywords": [
-    "TODO",
-    "FIXME",
-    "WIP",
-    "REVIEW"
-  ]
+  "whatWasIDoing.todoKeywords": ["TODO", "FIXME", "WIP", "REVIEW"]
 }
 ```
 
@@ -345,15 +374,15 @@ Keywords to detect in comments for next-step hints.
 
 <br>
 
-| Scenario | How It Helps |
-|----------|--------------|
-| ☕ **Coffee Breaks** | Return from a 15-minute break and instantly recall what you were coding |
-| 🔀 **Context Switching** | Jump between multiple projects without losing your place |
-| 🌙 **End of Day** | Close VS Code at 5pm, reopen at 9am, pick up exactly where you left off |
-| 📞 **Unexpected Meetings** | Get pulled into a meeting? Resume your work seamlessly afterward |
-| 🐛 **Debugging Sessions** | Navigate through different files and functions while maintaining context |
-| 📚 **Code Reviews** | Switch between reviewing PRs and your own work effortlessly |
-| 🎯 **Focus Sessions** | Take breaks between Pomodoro sessions without losing momentum |
+| Scenario                   | How It Helps                                                             |
+| -------------------------- | ------------------------------------------------------------------------ |
+| ☕ **Coffee Breaks**       | Return from a 15-minute break and instantly recall what you were coding  |
+| 🔀 **Context Switching**   | Jump between multiple projects without losing your place                 |
+| 🌙 **End of Day**          | Close VS Code at 5pm, reopen at 9am, pick up exactly where you left off  |
+| 📞 **Unexpected Meetings** | Get pulled into a meeting? Resume your work seamlessly afterward         |
+| 🐛 **Debugging Sessions**  | Navigate through different files and functions while maintaining context |
+| 📚 **Code Reviews**        | Switch between reviewing PRs and your own work effortlessly              |
+| 🎯 **Focus Sessions**      | Take breaks between Pomodoro sessions without losing momentum            |
 
 </details>
 
@@ -364,6 +393,7 @@ Keywords to detect in comments for next-step hints.
 <td>
 
 ✅ **100% Local Storage**
+
 </td>
 <td>
 All data stored locally in VS Code's workspace state
@@ -373,6 +403,7 @@ All data stored locally in VS Code's workspace state
 <td>
 
 ✅ **No External Servers**
+
 </td>
 <td>
 Zero network requests - your code stays private
@@ -382,6 +413,7 @@ Zero network requests - your code stays private
 <td>
 
 ✅ **User Control**
+
 </td>
 <td>
 Clear history anytime with one command
@@ -391,6 +423,7 @@ Clear history anytime with one command
 <td>
 
 ✅ **Open Source**
+
 </td>
 <td>
 <a href="https://github.com/vansh-121/what-was-i-doing">Fully auditable code on GitHub</a>
@@ -404,30 +437,35 @@ Clear history anytime with one command
 <summary><b>Does this extension slow down VS Code?</b></summary>
 
 No! The extension uses efficient event listeners and only activates after VS Code finishes starting up. It has minimal performance impact.
+
 </details>
 
 <details>
 <summary><b>Will it track files in node_modules or .git?</b></summary>
 
 No. Common directories like `node_modules`, `.git`, `dist`, and `build` are excluded by default. You can customize exclusions in settings.
+
 </details>
 
 <details>
 <summary><b>Can I use this across multiple workspaces?</b></summary>
 
 Yes! Each workspace maintains its own separate history, so contexts don't mix between projects.
+
 </details>
 
 <details>
 <summary><b>What happens if I don't want the auto-popup?</b></summary>
 
 You can disable it in settings with `"whatWasIDoing.autoShowResumePopup": false`. You can still view history manually via the command palette or status bar.
+
 </details>
 
 <details>
 <summary><b>Does it work with all programming languages?</b></summary>
 
 Yes! Activity tracking works with all languages. Function name detection works best with JavaScript/TypeScript, Python, Java, C++, and other common languages.
+
 </details>
 
 ## 🛠️ Development
@@ -447,18 +485,18 @@ Press `F5` in VS Code to launch Extension Development Host.
 
 ## 📋 Requirements
 
-| Requirement | Version |
-|-------------|---------|
-| **VS Code** | ≥ 1.106.0 |
-| **OS** | Windows, macOS, Linux |
+| Requirement | Version               |
+| ----------- | --------------------- |
+| **VS Code** | ≥ 1.106.0             |
+| **OS**      | Windows, macOS, Linux |
 
 ## 🐛 Known Issues & Limitations
 
-| Issue | Workaround |
-|-------|------------|
-| Symbol detection may not work for all languages | Works best with JS/TS, Python, Java, C++ |
-| Very large files (>1MB) may have slower extraction | Excluded by default in most cases |
-| Function detection in complex nested structures | Still captures file and line number |
+| Issue                                              | Workaround                               |
+| -------------------------------------------------- | ---------------------------------------- |
+| Symbol detection may not work for all languages    | Works best with JS/TS, Python, Java, C++ |
+| Very large files (>1MB) may have slower extraction | Excluded by default in most cases        |
+| Function detection in complex nested structures    | Still captures file and line number      |
 
 **Found a bug?** [Report it here](https://github.com/vansh-121/what-was-i-doing/issues/new?labels=bug) 🐛
 
@@ -466,13 +504,13 @@ Press `F5` in VS Code to launch Extension Development Host.
 
 See [CHANGELOG.md](CHANGELOG.md) for detailed release notes.
 
-### Latest Version: 1.0.8
+### Latest Version: 1.0.9
 
 - ✨ **NEW**: Added a beautiful interactive Walkthrough to guide new users on first install.
 - 🚀 **IMPROVED**: Refined marketplace copy and onboarding experience.
 - 🔔 **NEW**: Automatic first-run popup to open the walkthrough immediately.
 
-### Version: 1.0.6
+### Version: 1.0.6 - 1.0.7
 
 - 🐛 **FIXED**: Custom TODO keywords now properly respected in note generation
 - 🐛 **FIXED**: TODO comment changes now correctly trigger new context saves

@@ -2,7 +2,7 @@
   "name": "what-was-i-doing",
   "displayName": "What Was I Doing?",
   "description": "Automatically tracks your work context and helps you resume exactly where you left off after breaks",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "publisher": "VanshSethi",
   "author": {
     "name": "Vansh Sethi"
@@ -23,7 +23,12 @@
     "resume",
     "workflow",
     "focus",
-    "tracking"
+    "tracking",
+    "history",
+    "git",
+    "timeline",
+    "todo",
+    "developer-tools"
   ],
   "engines": {
     "vscode": "^1.106.0"

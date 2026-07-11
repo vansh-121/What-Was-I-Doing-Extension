@@ -130,6 +130,56 @@ vsce package
 vsce publish
 ```
 
+## 🌐 Publishing to Open VSX Registry (for VSCodium / Gitpod)
+
+Open VSX Registry is an open-source alternative to the Microsoft VS Code Marketplace. Publishing here makes your extension available to developers using **VSCodium**, **Gitpod**, **GitHub Codespaces** (sometimes), and **Eclipse Theia**.
+
+### 1. Create an Account & Namespace
+1. Go to [open-vsx.org](https://open-vsx.org/) and sign in (GitHub log-in supported).
+2. Go to your profile and request/create a namespace matching your publisher ID: `VanshSethi`. 
+   *(Note: Namespaces starting with a user's GitHub username are usually auto-approved or approved quickly).*
+
+### 2. Generate an Access Token
+1. In Open VSX, go to **Settings** -> **Access Tokens**.
+2. Generate a token and save it securely.
+
+### 3. Publish via CLI (ovsx) with the Custom Open VSX README
+Both `vsce` and `ovsx` pack the `README.md` file found in the root directory by default. To publish to Open VSX with your custom [README_OVSX.md](file:///e:/What%20Was%20I%20Doing%20Extension/README_OVSX.md), follow these commands to swap the READMEs temporarily during publishing:
+
+#### On Windows (PowerShell):
+```powershell
+# 1. Temporarily swap READMEs
+Rename-Item README.md README_MS.md
+Rename-Item README_OVSX.md README.md
+
+# 2. Package and Publish
+npx @vscode/vsce package
+npx ovsx publish what-was-i-doing-1.0.10.vsix -p <YOUR_OPEN_VSX_TOKEN>
+
+# 3. Restore original READMEs
+Rename-Item README.md README_OVSX.md
+Rename-Item README_MS.md README.md
+```
+
+#### On macOS / Linux (Bash):
+```bash
+# 1. Temporarily swap READMEs
+mv README.md README_MS.md
+mv README_OVSX.md README.md
+
+# 2. Package and Publish
+npx @vscode/vsce package
+npx ovsx publish what-was-i-doing-1.0.10.vsix -p <YOUR_OPEN_VSX_TOKEN>
+
+# 3. Restore original READMEs
+mv README.md README_OVSX.md
+mv README_MS.md README.md
+```
+
+Alternatively, you can manually swap the files, run `npx @vscode/vsce package`, and upload the generated `.vsix` file directly through the web UI at [open-vsx.org/publish](https://open-vsx.org/publish).
+
+---
+
 ## 📊 Version Management
 
 Semantic versioning:
