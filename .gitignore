@@ -4,3 +4,9 @@ node_modules
 .vscode-test/
 *.vsix
 *.txt
+
+# Local launch & publishing docs
+PRODUCT_HUNT_LAUNCH.md
+PUBLISHING.md
+README_OVSX.md
+README_MS.md

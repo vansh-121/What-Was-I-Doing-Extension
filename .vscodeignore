@@ -9,6 +9,13 @@ assets/clips/**
 esbuild.js
 create-logo.js
 vsc-extension-quickstart.md
+PRODUCT_HUNT_LAUNCH.md
+PUBLISHING.md
+README_OVSX.md
+README_MS.md
+website-prompt.txt
+.github/**
+*.vsix
 **/tsconfig.json
 **/eslint.config.mjs
 **/*.map
