@@ -13,13 +13,13 @@
     <img src="https://img.shields.io/badge/Website-whatwasidoing.dev-blue?style=flat&logo=google-chrome" alt="Website">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=VanshSethi.what-was-i-doing">
-    <img src="https://badgen.net/vs-marketplace/v/VanshSethi.what-was-i-doing?color=blue&v=1.0.10" alt="VS Code Marketplace Version">
+    <img src="https://badgen.net/vs-marketplace/v/VanshSethi.what-was-i-doing?color=blue&v=1.1.0" alt="VS Code Marketplace Version">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=VanshSethi.what-was-i-doing">
-    <img src="https://badgen.net/vs-marketplace/i/VanshSethi.what-was-i-doing?color=green&v=1.0.10" alt="Downloads">
+    <img src="https://badgen.net/vs-marketplace/i/VanshSethi.what-was-i-doing?color=green&v=1.1.0" alt="Downloads">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=VanshSethi.what-was-i-doing">
-    <img src="https://badgen.net/vs-marketplace/rating/VanshSethi.what-was-i-doing?color=orange&v=1.0.10" alt="Rating">
+    <img src="https://badgen.net/vs-marketplace/rating/VanshSethi.what-was-i-doing?color=orange&v=1.1.0" alt="Rating">
   </a>
   <a href="https://open-vsx.org/extension/VanshSethi/what-was-i-doing">
     <img src="https://img.shields.io/open-vsx/v/VanshSethi/what-was-i-doing?style=flat&color=purple&label=Open%20VSX" alt="Open VSX Version">
@@ -504,10 +504,11 @@ Press `F5` in VS Code to launch Extension Development Host.
 
 See [CHANGELOG.md](CHANGELOG.md) for detailed release notes.
 
-### Latest Version: 1.0.9
+### Latest Version: 1.1.0
 
-- ✨ **NEW**: Added a beautiful interactive Walkthrough to guide new users on first install.
-- 🚀 **IMPROVED**: Refined marketplace copy and onboarding experience.
+- 🚀 **IMPROVED**: Expanded search keywords in `package.json` to boost organic Marketplace discoverability.
+- 🌐 **NEW**: Added dedicated support and installation instructions for publishing to the Open VSX Registry (supporting VSCodium and Eclipse Theia).
+- ✨ **NEW**: Beautiful interactive Walkthrough to guide new users on first install.
 - 🔔 **NEW**: Automatic first-run popup to open the walkthrough immediately.
 
 ### Version: 1.0.6 - 1.0.7

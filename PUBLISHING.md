@@ -154,7 +154,7 @@ Rename-Item README_OVSX.md README.md
 
 # 2. Package and Publish
 npx @vscode/vsce package
-npx ovsx publish what-was-i-doing-1.0.10.vsix -p <YOUR_OPEN_VSX_TOKEN>
+npx ovsx publish what-was-i-doing-1.1.0.vsix -p <YOUR_OPEN_VSX_TOKEN>
 
 # 3. Restore original READMEs
 Rename-Item README.md README_OVSX.md
@@ -169,7 +169,7 @@ mv README_OVSX.md README.md
 
 # 2. Package and Publish
 npx @vscode/vsce package
-npx ovsx publish what-was-i-doing-1.0.10.vsix -p <YOUR_OPEN_VSX_TOKEN>
+npx ovsx publish what-was-i-doing-1.1.0.vsix -p <YOUR_OPEN_VSX_TOKEN>
 
 # 3. Restore original READMEs
 mv README.md README_OVSX.md

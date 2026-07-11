@@ -4,7 +4,7 @@ All notable changes to the "what-was-i-doing" extension will be documented in th
 
 **[🌐 Website](https://whatwasidoing.dev)** • **[📥 Install from VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=VanshSethi.what-was-i-doing)**
 
-## [1.0.10] - 2026-07-11
+## [1.1.0] - 2026-07-11
 
 ### Improved
 - 🚀 **Marketplace SEO** - Expanded search keywords (history, git, timeline, todo, etc.) to improve discoverability on VS Code Marketplace.
